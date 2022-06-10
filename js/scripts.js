@@ -3,23 +3,35 @@ function beepBoop(numbers) {
   let finalArray = []
   let spaceArray = numbers.toString().split("");
   let realDigits = spaceArray.map(Number);
-  console.log(realDigits);
-  const roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-  for (i = 0; i > realDigits.length; i++) {
-    if (realDigits[0] === 1) {
-      finalArray.push(roboCode[1]);
+  let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
+  realDigits.forEach(function (element) {
+    if (realDigits[0] == 3) {
+      finalArray.push(roboCode[2]);
       console.log(finalArray);
+    } else if (realDigits[0] == 2 ) {
+      finalArray.push(roboCode[1]);
+    } else if (realDigits[0] == 1) {
+      finalArray.push(roboCode[0])
     }
-  }
+  });
 }
 
 
 
 
 
-
-
-
+// function beepBoop(numbers) {
+//   let finalArray = []
+//   let spaceArray = numbers.toString().split("");
+//   let realDigits = spaceArray.map(Number);
+//   let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
+//   for (i = 0; i > realDigits.length; i++) {
+//     if (realDigits[0] == 1) {
+//       finalArray = finalArray.push(roboCode[1]);
+//       console.log(finalArray);
+//     }
+//   }
+// }
 
 
 // function beepBoop(numbers) {
