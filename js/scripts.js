@@ -1,10 +1,12 @@
 // Business Logic
 function beepBoop(numbers) {
   let finalArray = []
-  let spaceArray = numbers.split("");
+  let spaceArray = numbers.toString().split("");
+  let realDigits = spaceArray.map(Number);
+  console.log(realDigits);
   const roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-  for (i = 0; i > spaceArray.length; i++) {
-    if (spaceArray[1] == 1) {
+  for (i = 0; i > realDigits.length; i++) {
+    if (realDigits[0] === 1) {
       finalArray.push(roboCode[1]);
       console.log(finalArray);
     }
@@ -124,7 +126,7 @@ function beepBoop(numbers) {
 $(document).ready(function() {
   $("form#code").submit(function(event) {
     event.preventDefault();
-    let ogValue = $("#usernum").val();
+    let ogValue = parseInt($("#usernum").val());
     $("#robonum").html(beepBoop(ogValue));
     $(".container p").show()
   });
