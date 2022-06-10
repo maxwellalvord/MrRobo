@@ -1,0 +1,16 @@
+.container h1 {
+  color: blueviolet;
+  text-align: center;
+}
+
+#code {
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+}
+
+.span {
+  color: blueviolet;
+}
