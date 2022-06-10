@@ -1,6 +1,12 @@
 .container h1 {
   color: blueviolet;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container h4 {
+  color: blanchedalmond;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #code {
@@ -18,4 +24,7 @@ span {
 
 body {
   background: linear-gradient(to right,#e66465, #9198e5);
+}
+button {
+  font-family: 'Times New Roman', Times, serif;
 }

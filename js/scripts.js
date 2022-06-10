@@ -10,22 +10,16 @@ function beepBoop(numbers) {
     let finalRealDigits = realDigits.map(Number);
     if (finalRealDigits[0] == 3) {
       finalArray.push(roboCode[2]);
-      console.log(finalArray);
     } else if (finalRealDigits[1] == 3) {
-      finalArray.push(roboCode[2]);
-      console.log(finalArray); 
+      finalArray.push(roboCode[2]); 
     } else if (finalRealDigits[0] == 2 ) {
       finalArray.push(roboCode[1]);
-      console.log(finalArray);
     } else if (finalRealDigits[1] == 2 ) {
       finalArray.push(roboCode[1]);
-      console.log(finalArray);
     } else if (finalRealDigits[0] == 1) {
       finalArray.push(roboCode[0])
-      console.log(finalArray);
     } else if (finalRealDigits[1] == 1) {
       finalArray.push(roboCode[0])
-      console.log(finalArray);
     } else {
       finalArray.push(spaceArray);
     }
