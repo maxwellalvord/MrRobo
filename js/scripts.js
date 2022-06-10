@@ -1,3 +1,4 @@
+// Business Logic
 function beepBoop(numbers) {
   let answer = "";
   let numberArray = Array.from(String(numbers), Number);
@@ -104,6 +105,7 @@ $(document).ready(function() {
     event.preventDefault();
     let ogValue = $("#usernum").val();
     $("#robonum").html(beepBoop(ogValue));
+    $(".container p").show()
   });
 });
   

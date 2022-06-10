@@ -9,8 +9,13 @@
 
 .container p {
   text-align: center;
+  display: none;
 }
 
-.span {
+span {
   color: blueviolet;
+}
+
+body {
+  background: linear-gradient(to right,#e66465, #9198e5);
 }
