@@ -1,20 +1,39 @@
 function beepBoop(numbers) {
-  const finalArray = [];
-  const textArray = numbers.split(" ");
+  let answer = "";
   let numberArray = Array.from(String(numbers), Number);
-  let counter = 0;
-  for (i = 0; i < numberArray; i++) {
-    if (counter < numbers) {
-    finalArray.push(numberArray[i]);
-    counter += 1;
-    console.log(counter);
-    } else if (counter < 1 || numbers)
-    finalArray.push((numberArray[i] - counter) + numberArray[i]);
-    counter += 1;
-
-  console.log(finalArray);
+  console.log(numberArray)
+  console.log(numbers);
+  if (numbers == 1) {
+    answer = "beep";
+    console.log(answer);
+  } else if (numbers == 2) {
+    answer = "boop";
+    console.log(answer);
   }
 }
+
+
+
+
+
+
+
+// function beepBoop(numbers) {
+//   const finalArray = [];
+//   const textArray = numbers.split(" ");
+//   let numberArray = Array.from(String(numbers), Number);
+//   let counter = 0;
+//   for (i = 0; i < numberArray; i++) {
+//     if (counter < numbers) {
+//     finalArray.push(numberArray[i]);
+//     counter += 1;
+//     } else if (counter < 1 || numbers)
+//     finalArray.push((numberArray[i] - counter) + numberArray[i]);
+//     counter += 1;
+
+//   console.log(finalArray);
+//   }
+// }
     
   
   
