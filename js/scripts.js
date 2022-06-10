@@ -1,7 +1,8 @@
 // Business Logic
 function beepBoop(number) {
+  let 
   let numberArray = Array.from(String(number), Number)
-  console.log(numberArray);
+  for (i = 0; i < numberArray.length -1; i++)
 
 }
 
