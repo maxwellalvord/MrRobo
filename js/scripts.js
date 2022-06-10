@@ -1,4 +1,11 @@
 // Business Logic
+function startUp(num) {
+  let startSpaceArray = num;
+  console.log(startSpaceArray);
+  startSpaceArray.range(0, num);
+  console.log(startSpaceArray);
+startArray.forEach(function (element) {
+  beepBoop(startArray);
 function beepBoop(numbers) {
   let finalArray = []
   let spaceArray = numbers.toString().split(" ");
@@ -28,9 +35,39 @@ function beepBoop(numbers) {
     }
   }); console.log(finalArray);
 }
+});
+}
 
 
-
+// function beepBoop(numbers) {
+//   let finalArray = []
+//   let spaceArray = numbers.toString().split(" ");
+//   let realDigits = spaceArray.map(Number);
+//   let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
+//   realDigits.forEach(function (element) {
+//     let realDigits = element.toString().split("");
+//     let finalRealDigits = realDigits.map(Number);
+//     if (finalRealDigits[0] == 3) {
+//       finalArray.push(roboCode[2]);
+//       console.log(finalArray);
+//     } else if (finalRealDigits[1] == 3) {
+//       finalArray.push(roboCode[2]);
+//       console.log(finalArray); 
+//     } else if (finalRealDigits[0] == 2 ) {
+//       finalArray.push(roboCode[1]);
+//       console.log(finalArray);
+//     } else if (finalRealDigits[1] == 2 ) {
+//       finalArray.push(roboCode[1]);
+//       console.log(finalArray);
+//     } else if (finalRealDigits[0] == 1) {
+//       finalArray.push(roboCode[0])
+//       console.log(finalArray);
+//     } else if (finalRealDigits[1] == 1) {
+//       finalArray.push(roboCode[0])
+//       console.log(finalArray);
+//     }
+//   }); console.log(finalArray);
+// }
 
 
 // function beepBoop(numbers) {
@@ -152,7 +189,7 @@ $(document).ready(function() {
   $("form#code").submit(function(event) {
     event.preventDefault();
     let ogValue = parseInt($("#usernum").val());
-    $("#robonum").html(beepBoop(ogValue));
+    $("#robonum").html(startUp(ogValue));
     $(".container p").show()
   });
 });
