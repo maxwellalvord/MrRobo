@@ -43,6 +43,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Describe: beepBoop()
 
-Test: "It should return an array of numbers from 0 to the users inputted number"
-Code: beepBoop(5);
-Expected Output: [0, 1, 2, 3, 4, 5]
+Test: "It should return a beep for 1 and boop for 2"
+Code: beepBoop(1);
+Expected Output: beep
+
+Test: "It should return a beep for 1 and boop for 2"
+Code: beepBoop(2);
+Expected Output: beep
+
+Test: "It should return the translated language but to 15"
+Code: let answer = "";
+let spaceArray = number.split(" ");
+beepBoop(7);
+Expected Output: "0 beep boop Wybmn 4 5 6 7"
