@@ -1,11 +1,5 @@
 // Business Logic
-function startUp(num) {
-  let startSpaceArray = num;
-  console.log(startSpaceArray);
-  startSpaceArray.range(0, num);
-  console.log(startSpaceArray);
-startArray.forEach(function (element) {
-  beepBoop(startArray);
+
 function beepBoop(numbers) {
   let finalArray = []
   let spaceArray = numbers.toString().split(" ");
@@ -32,13 +26,23 @@ function beepBoop(numbers) {
     } else if (finalRealDigits[1] == 1) {
       finalArray.push(roboCode[0])
       console.log(finalArray);
+    } else {
+      finalArray.push(spaceArray);
     }
-  }); console.log(finalArray);
-}
-});
+  }); return finalArray;
 }
 
 
+
+
+
+// function startUp(num) {
+//   let startSpaceArray = num;
+//   console.log(startSpaceArray);
+//   startSpaceArray.range(0, num);
+//   console.log(startSpaceArray);
+// startArray.forEach(function (element) {
+//   beepBoop(startArray);
 // function beepBoop(numbers) {
 //   let finalArray = []
 //   let spaceArray = numbers.toString().split(" ");
@@ -68,6 +72,9 @@ function beepBoop(numbers) {
 //     }
 //   }); console.log(finalArray);
 // }
+// });
+// }
+
 
 
 // function beepBoop(numbers) {
@@ -189,7 +196,7 @@ $(document).ready(function() {
   $("form#code").submit(function(event) {
     event.preventDefault();
     let ogValue = parseInt($("#usernum").val());
-    $("#robonum").html(startUp(ogValue));
+    $("#robonum").html(beepBoop(ogValue));
     $(".container p").show()
   });
 });
