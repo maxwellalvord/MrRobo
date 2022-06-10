@@ -1,6 +1,14 @@
 function beepBoop(numbers) {
+  const finalArray = [];
   const textArray = numbers.split(" ");
-  console.log(textArray);
+  let numberArray = Array.from(String(numbers), Number);
+  let counter = 0;
+  for (i = 0; i < textArray.length; i++) {
+    if (counter < numbers)
+  
+
+  console.log(finalArray);
+  }
 }
     
   
