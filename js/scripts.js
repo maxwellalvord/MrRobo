@@ -1,18 +1,17 @@
 function beepBoop(numbers) {
   let answer = "";
   let numberArray = Array.from(String(numbers), Number);
-  console.log(numberArray)
-  console.log(numbers);
-  numberArray.forEach(function(numbers) {
+  let spaceArray = numberArray.split("")
+  spaceArray.forEach(function(numbers) {
 
     if (numbers == 1) {
     answer = "beep";
-    console.log(answer);
+
   } else if (numbers == 2) {
     answer = "boop";
-    console.log(answer);
+    
   }
-});
+}); console.log(answer);
 }
 
 
