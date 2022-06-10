@@ -1,9 +1,6 @@
-function beepBoop(number) {
-  // let finalArray = [];
-  let numberArray = Array.from(String(number), Number) 
-  const finalArray = numberArray.map(function(number) {
-    number.range(0, number)
-  });
+function beepBoop(numbers) {
+  const textArray = numbers.split(" ");
+  console.log(textArray);
 }
     
   
@@ -45,10 +42,11 @@ function beepBoop(number) {
 // UI Logic
 
 $(document).ready(function() {
-  $("form#code").submit(function(event){
+  $("form#code").submit(function(event) {
     event.preventDefault();
-    let ogValue = parseInt($("#usernum").val());
+    let ogValue = $("#usernum").val();
     beepBoop(ogValue);
     // $("#robonum").html();
   });
 });
+  
