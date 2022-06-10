@@ -1,9 +1,14 @@
 // Business Logic
 function beepBoop(number) {
-  let 
-  let numberArray = Array.from(String(number), Number)
-  for (i = 0; i < numberArray.length -1; i++)
-
+  let finalArray = [];
+  let numberArray = Array.from(String(number), Number) 
+  console.log(numberArray);
+  for (i = number; i < 0; i--) {
+    if (i === number) {
+      finalArray.push(numberArray[i]);
+      console.log(finalArray);
+    
+  }; return finalArray;
 }
 
 
@@ -30,9 +35,4 @@ $(document).ready(function() {
     beepBoop(ogValue);
     // $("#robonum").html();
   });
-});
-
-
-
-
-
+})};
