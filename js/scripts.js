@@ -1,43 +1,64 @@
 // Business Logic
 function beepBoop(numbers) {
-  let answer = "";
-  let numberArray = Array.from(String(numbers), Number);
-  let spaceArray = numbers.split(" ");
-  spaceArray.forEach(function(numbers) {
-
-    if (numbers == 1) {
-    answer = "0 beep";
-  } else if (numbers == 2) {
-    answer = "0 beep boop";
-  } else if (numbers == 3) {
-    answer = "0 beep boop Wybmn"
-  }  else if (numbers == 4) {
-    answer = "0 beep boop Wybmn 4"
-  } else if (numbers == 5) {
-    answer = "0 beep boop Wybmn 4 5"
-  } else if (numbers == 6) {
-    answer = "0 beep boop Wybmn 4 5 6"
-  } else if (numbers == 7) {
-    answer = "0 beep boop Wybmn 4 5 6 7"
-  } else if (numbers == 8) {
-    answer = "0 beep boop Wybmn 4 5 6 7 8"
-  } else if (numbers == 9) {
-    answer = "0 beep boop Wybmn 4 5 6 7 8 9"
-  } else if (numbers == 10) {
-    answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep"
-  } else if (numbers == 11) {
-    answer = "0 beep boop Wybmn3 4 5 6 7 8 9 beep beep"
-  } else if (numbers == 12) {
-    answer = "0 beep boop Wybmn 4 5 67 8 9 beep beep boop"
-  } else if (numbers == 13) {
-    answer = "0 beep boop 3 4 5 6 7 8 9 beep beep boop Wybmn"
-  } else if (numbers == 14) {
-    answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep"
-  } else if (numbers == 15) {
-    answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep beep"
-  } 
-}); return answer;
+  let finalArray = []
+  let spaceArray = numbers.split("");
+  const roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
+  for (i = 0; i > spaceArray.length; i++) {
+    if (spaceArray[1] == 1) {
+      finalArray.push(roboCode[1]);
+      console.log(finalArray);
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+// function beepBoop(numbers) {
+//   let answer = "";
+//   let numberArray = Array.from(String(numbers), Number);
+//   let spaceArray = numbers.split(" ");
+//   spaceArray.forEach(function(numbers) {
+
+//     if (numbers == 1) {
+//     answer = "0 beep";
+//   } else if (numbers == 2) {
+//     answer = "0 beep boop";
+//   } else if (numbers == 3) {
+//     answer = "0 beep boop Wybmn"
+//   }  else if (numbers == 4) {
+//     answer = "0 beep boop Wybmn 4"
+//   } else if (numbers == 5) {
+//     answer = "0 beep boop Wybmn 4 5"
+//   } else if (numbers == 6) {
+//     answer = "0 beep boop Wybmn 4 5 6"
+//   } else if (numbers == 7) {
+//     answer = "0 beep boop Wybmn 4 5 6 7"
+//   } else if (numbers == 8) {
+//     answer = "0 beep boop Wybmn 4 5 6 7 8"
+//   } else if (numbers == 9) {
+//     answer = "0 beep boop Wybmn 4 5 6 7 8 9"
+//   } else if (numbers == 10) {
+//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep"
+//   } else if (numbers == 11) {
+//     answer = "0 beep boop Wybmn3 4 5 6 7 8 9 beep beep"
+//   } else if (numbers == 12) {
+//     answer = "0 beep boop Wybmn 4 5 67 8 9 beep beep boop"
+//   } else if (numbers == 13) {
+//     answer = "0 beep boop 3 4 5 6 7 8 9 beep beep boop Wybmn"
+//   } else if (numbers == 14) {
+//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep"
+//   } else if (numbers == 15) {
+//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep beep"
+//   } 
+// }); return answer;
+// }
 
 
 
