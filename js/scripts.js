@@ -3,13 +3,16 @@ function beepBoop(numbers) {
   let numberArray = Array.from(String(numbers), Number);
   console.log(numberArray)
   console.log(numbers);
-  if (numbers == 1) {
+  numberArray.forEach(function(numbers) {
+
+    if (numbers == 1) {
     answer = "beep";
     console.log(answer);
   } else if (numbers == 2) {
     answer = "boop";
     console.log(answer);
   }
+});
 }
 
 
