@@ -25,12 +25,13 @@ This page will allow the user to input a number and be able to see it translated
 * Visit the [gh-pages](https://maxwellalvord.github.io/MrRobo/)
 
 ## Known Bugs
+* Webpage will crash if inputted number is 1,000,000 or more, limit set to error at 10,000.
 
 ## License
 [MIT](https://opensource.org/licenses/MIT)
 
 Copyright &copy;
-2022 Maxwell ALvord
+2022 Maxwell Alvord
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

@@ -1,186 +1,25 @@
 // Business Logic
 
+
 function beepBoop(numbers) {
-  let finalArray = []
-  let spaceArray = numbers.toString().split(" ");
-  let realDigits = spaceArray.map(Number);
-  let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-  realDigits.forEach(function (element) {
-    let realDigits = element.toString().split("");
-    let finalRealDigits = realDigits.map(Number);
-    if (finalRealDigits[0] == 3) {
-      finalArray.push(roboCode[2]);
-    } else if (finalRealDigits[1] == 3) {
-      finalArray.push(roboCode[2]); 
-    } else if (finalRealDigits[0] == 2 ) {
-      finalArray.push(roboCode[1]);
-    } else if (finalRealDigits[1] == 2 ) {
-      finalArray.push(roboCode[1]);
-    } else if (finalRealDigits[0] == 1) {
-      finalArray.push(roboCode[0])
-    } else if (finalRealDigits[1] == 1) {
-      finalArray.push(roboCode[0])
+  let numberArray = [];
+  let error = [];
+  if (numbers > 10000) {
+    error.push("invalid number, please enter a number below 10,000.")
+    return error;
+  }
+  for (let i = 0; i <= numbers; i++) {
+    if (i.toString().match(/3/)){
+      numberArray.push(" Won't you be my neighbor?");
+    } else if (i.toString().match(/2/)){
+        numberArray.push(" Boop");
+    } else if (i.toString().match(/1/)){
+        numberArray.push(" Beep");
     } else {
-      finalArray.push(spaceArray);
-    }
-  }); return finalArray;
+      numberArray.push(" " + i);
+    } 
+  } return numberArray;
 }
-
-
-
-
-
-// function startUp(num) {
-//   let startSpaceArray = num;
-//   console.log(startSpaceArray);
-//   startSpaceArray.range(0, num);
-//   console.log(startSpaceArray);
-// startArray.forEach(function (element) {
-//   beepBoop(startArray);
-// function beepBoop(numbers) {
-//   let finalArray = []
-//   let spaceArray = numbers.toString().split(" ");
-//   let realDigits = spaceArray.map(Number);
-//   let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-//   realDigits.forEach(function (element) {
-//     let realDigits = element.toString().split("");
-//     let finalRealDigits = realDigits.map(Number);
-//     if (finalRealDigits[0] == 3) {
-//       finalArray.push(roboCode[2]);
-//       console.log(finalArray);
-//     } else if (finalRealDigits[1] == 3) {
-//       finalArray.push(roboCode[2]);
-//       console.log(finalArray); 
-//     } else if (finalRealDigits[0] == 2 ) {
-//       finalArray.push(roboCode[1]);
-//       console.log(finalArray);
-//     } else if (finalRealDigits[1] == 2 ) {
-//       finalArray.push(roboCode[1]);
-//       console.log(finalArray);
-//     } else if (finalRealDigits[0] == 1) {
-//       finalArray.push(roboCode[0])
-//       console.log(finalArray);
-//     } else if (finalRealDigits[1] == 1) {
-//       finalArray.push(roboCode[0])
-//       console.log(finalArray);
-//     }
-//   }); console.log(finalArray);
-// }
-// });
-// }
-
-
-
-// function beepBoop(numbers) {
-//   let finalArray = []
-//   let spaceArray = numbers.toString().split("");
-//   let realDigits = spaceArray.map(Number);
-//   let roboCode = ["Beep!", "Boop!", "Won't you be my neighbor?"]
-//   for (i = 0; i > realDigits.length; i++) {
-//     if (realDigits[0] == 1) {
-//       finalArray = finalArray.push(roboCode[1]);
-//       console.log(finalArray);
-//     }
-//   }
-// }
-
-
-// function beepBoop(numbers) {
-//   let answer = "";
-//   let numberArray = Array.from(String(numbers), Number);
-//   let spaceArray = numbers.split(" ");
-//   spaceArray.forEach(function(numbers) {
-
-//     if (numbers == 1) {
-//     answer = "0 beep";
-//   } else if (numbers == 2) {
-//     answer = "0 beep boop";
-//   } else if (numbers == 3) {
-//     answer = "0 beep boop Wybmn"
-//   }  else if (numbers == 4) {
-//     answer = "0 beep boop Wybmn 4"
-//   } else if (numbers == 5) {
-//     answer = "0 beep boop Wybmn 4 5"
-//   } else if (numbers == 6) {
-//     answer = "0 beep boop Wybmn 4 5 6"
-//   } else if (numbers == 7) {
-//     answer = "0 beep boop Wybmn 4 5 6 7"
-//   } else if (numbers == 8) {
-//     answer = "0 beep boop Wybmn 4 5 6 7 8"
-//   } else if (numbers == 9) {
-//     answer = "0 beep boop Wybmn 4 5 6 7 8 9"
-//   } else if (numbers == 10) {
-//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep"
-//   } else if (numbers == 11) {
-//     answer = "0 beep boop Wybmn3 4 5 6 7 8 9 beep beep"
-//   } else if (numbers == 12) {
-//     answer = "0 beep boop Wybmn 4 5 67 8 9 beep beep boop"
-//   } else if (numbers == 13) {
-//     answer = "0 beep boop 3 4 5 6 7 8 9 beep beep boop Wybmn"
-//   } else if (numbers == 14) {
-//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep"
-//   } else if (numbers == 15) {
-//     answer = "0 beep boop Wybmn 4 5 6 7 8 9 beep beep boop Wybmn beep beep"
-//   } 
-// }); return answer;
-// }
-
-
-
-
-
-
-
-// function beepBoop(numbers) {
-//   const finalArray = [];
-//   const textArray = numbers.split(" ");
-//   let numberArray = Array.from(String(numbers), Number);
-//   let counter = 0;
-//   for (i = 0; i < numberArray; i++) {
-//     if (counter < numbers) {
-//     finalArray.push(numberArray[i]);
-//     counter += 1;
-//     } else if (counter < 1 || numbers)
-//     finalArray.push((numberArray[i] - counter) + numberArray[i]);
-//     counter += 1;
-
-//   console.log(finalArray);
-//   }
-// }
-    
-  
-  
-
-
-// Business logic
-// function beepBoop(number) {
-//   let finalArray = [];
-//   let numberArray = Array.from(String(number), Number) 
-//   console.log(numberArray);
-//   numberArray.forEach (function(number) {
-//     console.log(number)
-//       finalArray.push(numberArray - (number));
-//       finalArray.push(numberArray - (number-1));
-//       finalArray.push(numberArray - (number-2));
-//       finalArray.push(numberArray - (number-3));
-//       finalArray.push(numberArray - (number-4));
-//       finalArray.push(numberArray - (number-5));
-//       finalArray.push(numberArray - (number-6));
-//       finalArray.push(numberArray - (number-7));
-//       finalArray.push(number);
-//       console.log(finalArray);
-    
-//   }); return finalArray;
-// }
-
-
-
-
-
-
-
-
-
 
 
 
