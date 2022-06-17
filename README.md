@@ -18,7 +18,7 @@ This page will allow the user to input a number and be able to see it translated
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop.
-* Open portfolio folder.
+* Open MrRobo folder.
 * Open index.html
 
 ### Alternative Setup
